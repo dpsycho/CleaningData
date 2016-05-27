@@ -2,8 +2,7 @@
 
 # Load dplyr 
 library(dplyr)
-# Set working directory
-setwd("C:/Users/NEUROCOM-DP/R datasets/CleaningData/week4/UCI HAR Dataset")
+
 
 # Read activity_labels.txt in avtivity_labels
 activity_labels<- read.table("./activity_labels.txt", header=FALSE, sep="")
