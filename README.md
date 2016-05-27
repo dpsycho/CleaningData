@@ -4,7 +4,7 @@ Contains code and information for the Cursera Getting and Cleaning data course
 The code is included in the run_analysis.R file, also included in this repository. A brief description of the steps followed in the code follows:
 
 Step 1. 
-The code begins with loading the dplyr package, and setting the working directory.
+The code begins with loading the dplyr package
 
 Step 2.
 Then, the information in activity_labels.txt and features.txt is loaded in activity_labels and features data frames, and the variables are renamed to more descriptive ones
@@ -24,6 +24,6 @@ Merges the two data frames, test_x and test_y, selecting only the variables we a
 Step 7.
 The data in test_train_x data frame are grouped by subject_id,activity_id, activity_name, and summarised using mean function on every measure. The process is using pipelines and the resulted set is inserted in test_train_group data frame
 
-
+Note: The code assumes that the working directory has been set to the folder where the data resides (i.e. to the UCI HAR Dataset)
 
 
